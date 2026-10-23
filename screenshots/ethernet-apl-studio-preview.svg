@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a111e" />
+      <stop offset="100%" stop-color="#111e33" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#142138" />
+      <stop offset="100%" stop-color="#101a2c" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bgGrad)" />
+  <g stroke="#1b2a44" stroke-width="1" opacity="0.4">
+    <line x1="0" y1="75" x2="1200" y2="75" />
+    <line x1="0" y1="150" x2="1200" y2="150" />
+    <line x1="0" y1="225" x2="1200" y2="225" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="0" y1="375" x2="1200" y2="375" />
+    <line x1="0" y1="450" x2="1200" y2="450" />
+    <line x1="0" y1="525" x2="1200" y2="525" />
+    <line x1="0" y1="600" x2="1200" y2="600" />
+  </g>
+
+  <!-- Top App Bar -->
+  <rect x="0" y="0" width="1200" height="70" fill="#0d1627" stroke="#233758" stroke-width="1" />
+  <rect x="25" y="15" width="40" height="40" rx="8" fill="url(#cyanGrad)" filter="url(#glow)" />
+  <text x="45" y="42" fill="#0a111e" font-family="Inter, sans-serif" font-weight="900" font-size="22" text-anchor="middle">🌐</text>
+  <text x="80" y="38" fill="#ffffff" font-family="Inter, sans-serif" font-weight="800" font-size="19">EthernetAPLForge Pro</text>
+  <text x="80" y="54" fill="#94a3b8" font-family="Inter, sans-serif" font-weight="500" font-size="12">10BASE-T1L &amp; 2-WISE Physical Layer Engineering Studio (IEEE 802.3cg / IEC TS 60079-47)</text>
+
+  <!-- Badge -->
+  <rect x="930" y="18" width="245" height="34" rx="17" fill="rgba(16, 185, 129, 0.15)" stroke="#10b981" stroke-width="1" />
+  <circle cx="948" cy="35" r="5" fill="#10b981" />
+  <text x="962" y="40" fill="#10b981" font-family="Inter, sans-serif" font-weight="600" font-size="12">IEC TS 60079-47 (2-WISE) Verified</text>
+
+  <!-- Tabs -->
+  <rect x="0" y="70" width="1200" height="45" fill="#0b1424" stroke="#233758" stroke-width="1" />
+  <text x="40" y="98" fill="#00f2fe" font-family="Inter, sans-serif" font-weight="700" font-size="13">Segment Topology Sizer</text>
+  <line x1="35" y1="113" x2="195" y2="113" stroke="#00f2fe" stroke-width="3" />
+  <text x="230" y="98" fill="#94a3b8" font-family="Inter, sans-serif" font-weight="600" font-size="13">Interactive Schematic</text>
+  <text x="400" y="98" fill="#94a3b8" font-family="Inter, sans-serif" font-weight="600" font-size="13">10-Point Intrinsic Safety</text>
+  <text x="590" y="98" fill="#94a3b8" font-family="Inter, sans-serif" font-weight="600" font-size="13">4-20mA / HART Migration ROI</text>
+  <text x="810" y="98" fill="#94a3b8" font-family="Inter, sans-serif" font-weight="600" font-size="13">BOM &amp; JSON Export</text>
+  <text x="970" y="98" fill="#94a3b8" font-family="Inter, sans-serif" font-weight="600" font-size="13">Python CLI Tool</text>
+
+  <!-- Left Main Card: Schematic Topology -->
+  <rect x="30" y="140" width="670" height="495" rx="12" fill="url(#cardGrad)" stroke="#233758" stroke-width="1" />
+  <text x="55" y="175" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="16">Point-to-Point Switched Physical Layer Architecture</text>
+  <text x="590" y="175" fill="#10b981" font-family="Inter, sans-serif" font-weight="600" font-size="12">● 10 Mbit/s Full-Duplex</text>
+
+  <!-- Safe Area Box -->
+  <rect x="50" y="200" width="170" height="260" rx="8" fill="#08101d" stroke="#233758" stroke-width="1" />
+  <text x="65" y="225" fill="#94a3b8" font-family="Inter, sans-serif" font-weight="700" font-size="10">CONTROL ROOM / SAFE AREA</text>
+  <rect x="65" y="245" width="140" height="90" rx="6" fill="#142138" stroke="#00f2fe" stroke-width="1.5" />
+  <text x="135" y="275" fill="#00f2fe" font-family="Inter, sans-serif" font-weight="800" font-size="11" text-anchor="middle">APL POWER SWITCH</text>
+  <text x="135" y="295" fill="#ffffff" font-family="JetBrains Mono, monospace" font-size="9" text-anchor="middle">Supply: 24V / 50V DC</text>
+  <text x="135" y="315" fill="#10b981" font-family="JetBrains Mono, monospace" font-size="9" text-anchor="middle">PoDL Source (PSE)</text>
+
+  <!-- Hazardous Area Box -->
+  <rect x="250" y="200" width="430" height="260" rx="8" fill="rgba(245, 158, 11, 0.04)" stroke="rgba(245, 158, 11, 0.3)" stroke-width="1" />
+  <text x="265" y="225" fill="#f59e0b" font-family="Inter, sans-serif" font-weight="700" font-size="10">HAZARDOUS AREA [ Zone 1 / Div 1 (Ex ib IIIC/IIB) ]</text>
+
+  <!-- Trunk Cable -->
+  <path d="M 205 290 L 300 290" fill="none" stroke="#00f2fe" stroke-width="3" />
+  <text x="252" y="280" fill="#00f2fe" font-family="JetBrains Mono, monospace" font-weight="700" font-size="9" text-anchor="middle">TRUNK: 650m</text>
+  <text x="252" y="305" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="8" text-anchor="middle">1.56 dB Loss</text>
+
+  <!-- APL Field Switch -->
+  <rect x="300" y="240" width="130" height="110" rx="6" fill="#142138" stroke="#10b981" stroke-width="2" />
+  <text x="365" y="270" fill="#10b981" font-family="Inter, sans-serif" font-weight="800" font-size="11" text-anchor="middle">APL FIELD SWITCH</text>
+  <text x="365" y="290" fill="#ffffff" font-family="JetBrains Mono, monospace" font-size="9" text-anchor="middle">Input: 18.99V DC</text>
+  <text x="365" y="310" fill="#f59e0b" font-family="JetBrains Mono, monospace" font-size="9" text-anchor="middle">2-WISE Barriers</text>
+  <text x="365" y="330" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="8" text-anchor="middle">Max 1.3W per Spur</text>
+
+  <!-- Spurs Lines and Field Instruments -->
+  <!-- Spur 1 -->
+  <path d="M 430 260 L 510 235" fill="none" stroke="#10b981" stroke-width="1.5" />
+  <rect x="510" y="220" width="150" height="30" rx="4" fill="#08101d" stroke="#233758" stroke-width="1" />
+  <text x="520" y="238" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="9">PT-101 (75m)</text>
+  <text x="645" y="238" fill="#00f2fe" font-family="JetBrains Mono, monospace" font-size="8" text-anchor="end">PROFINET 0.5W</text>
+
+  <!-- Spur 2 -->
+  <path d="M 430 280 L 510 270" fill="none" stroke="#10b981" stroke-width="1.5" />
+  <rect x="510" y="255" width="150" height="30" rx="4" fill="#08101d" stroke="#233758" stroke-width="1" />
+  <text x="520" y="273" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="9">FT-102 (120m)</text>
+  <text x="645" y="273" fill="#3b82f6" font-family="JetBrains Mono, monospace" font-size="8" text-anchor="end">EtherNet/IP 0.8W</text>
+
+  <!-- Spur 3 -->
+  <path d="M 430 300 L 510 305" fill="none" stroke="#10b981" stroke-width="1.5" />
+  <rect x="510" y="290" width="150" height="30" rx="4" fill="#08101d" stroke="#233758" stroke-width="1" />
+  <text x="520" y="308" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="9">TT-103 (45m)</text>
+  <text x="645" y="308" fill="#10b981" font-family="JetBrains Mono, monospace" font-size="8" text-anchor="end">OPC UA 0.4W</text>
+
+  <!-- Spur 4 -->
+  <path d="M 430 320 L 510 340" fill="none" stroke="#10b981" stroke-width="1.5" />
+  <rect x="510" y="325" width="150" height="30" rx="4" fill="#08101d" stroke="#233758" stroke-width="1" />
+  <text x="520" y="343" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="9">CV-104 (160m)</text>
+  <text x="645" y="343" fill="#f59e0b" font-family="JetBrains Mono, monospace" font-size="8" text-anchor="end">HART-IP 1.1W</text>
+
+  <!-- Lower Schematic Specs -->
+  <rect x="50" y="480" width="630" height="135" rx="6" fill="#08101d" stroke="#233758" stroke-width="1" />
+  <text x="70" y="505" fill="#00f2fe" font-family="JetBrains Mono, monospace" font-weight="700" font-size="11">● Physical Layer: 10BASE-T1L (IEEE 802.3cg), 1.0 Vpp / 2.4 Vpp PAM3 Modulation</text>
+  <text x="70" y="527" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="10">• Max Trunk Length: 1,000m (AWG 18 Type A) | Max Spurs: 200m per device</text>
+  <text x="70" y="549" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="10">• Intrinsic Safety: IEC TS 60079-47 (2-WISE) simplifies hazardous zone validation</text>
+  <text x="70" y="571" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="10">• Protocol Transparent: Native TCP/IP routes PROFINET, EtherNet/IP, OPC UA, HART-IP</text>
+  <text x="70" y="593" fill="#10b981" font-family="JetBrains Mono, monospace" font-weight="700" font-size="10">✓ Eliminates Analog Marshalling Cabinets &amp; Handheld Field Communicators</text>
+
+  <!-- Right Side Cards: Metrics & Sizing -->
+  <rect x="725" y="140" width="445" height="495" rx="12" fill="url(#cardGrad)" stroke="#233758" stroke-width="1" />
+  <text x="750" y="175" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="16">Key Engineering &amp; Financial Metrics</text>
+
+  <!-- KPI Badges -->
+  <g transform="translate(750, 200)">
+    <!-- Box 1 -->
+    <rect x="0" y="0" width="190" height="85" rx="8" fill="#0d1627" stroke="#233758" stroke-width="1" />
+    <text x="95" y="40" fill="#00f2fe" font-family="JetBrains Mono, monospace" font-weight="800" font-size="22" text-anchor="middle">8,333x</text>
+    <text x="95" y="65" fill="#94a3b8" font-family="Inter, sans-serif" font-size="10" font-weight="600" text-anchor="middle">SPEEDUP VS. HART FSK</text>
+
+    <!-- Box 2 -->
+    <rect x="205" y="0" width="190" height="85" rx="8" fill="#0d1627" stroke="#233758" stroke-width="1" />
+    <text x="300" y="40" fill="#10b981" font-family="JetBrains Mono, monospace" font-weight="800" font-size="22" text-anchor="middle">100%</text>
+    <text x="300" y="65" fill="#94a3b8" font-family="Inter, sans-serif" font-size="10" font-weight="600" text-anchor="middle">2-WISE COMPLIANCE</text>
+
+    <!-- Box 3 -->
+    <rect x="0" y="100" width="190" height="85" rx="8" fill="#0d1627" stroke="#233758" stroke-width="1" />
+    <text x="95" y="140" fill="#f59e0b" font-family="JetBrains Mono, monospace" font-weight="800" font-size="22" text-anchor="middle">$299.3K</text>
+    <text x="95" y="165" fill="#94a3b8" font-family="Inter, sans-serif" font-size="10" font-weight="600" text-anchor="middle">15-YR PLANT SAVINGS</text>
+
+    <!-- Box 4 -->
+    <rect x="205" y="100" width="190" height="85" rx="8" fill="#0d1627" stroke="#233758" stroke-width="1" />
+    <text x="300" y="140" fill="#3b82f6" font-family="JetBrains Mono, monospace" font-weight="800" font-size="22" text-anchor="middle">33.4 dB</text>
+    <text x="300" y="165" fill="#94a3b8" font-family="Inter, sans-serif" font-size="10" font-weight="600" text-anchor="middle">TRUNK SAFETY MARGIN</text>
+  </g>
+
+  <!-- Terminal Preview -->
+  <rect x="750" y="405" width="395" height="210" rx="8" fill="#060b13" stroke="#233758" stroke-width="1" />
+  <text x="765" y="430" fill="#00f2fe" font-family="JetBrains Mono, monospace" font-size="11">$ ./build/ethernet-apl-cli.py size --trunk 650</text>
+  <text x="765" y="450" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="10">[OK] Trunk: 650m (Resistance: 28.6 Ω, Atten: 1.56 dB)</text>
+  <text x="765" y="470" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="10">[OK] Switch Terminal V: 18.99V (Safety Margin: 33.44 dB)</text>
+  <text x="765" y="490" fill="#10b981" font-family="JetBrains Mono, monospace" font-size="10">[OK] 4 Spurs Validated under IEC TS 60079-47 (2-WISE)</text>
+  <text x="765" y="510" fill="#00f2fe" font-family="JetBrains Mono, monospace" font-size="11">$ ./build/ethernet-apl-cli.py roi --devices 100</text>
+  <text x="765" y="530" fill="#ffffff" font-family="JetBrains Mono, monospace" font-size="10">Capex Savings: $48,500 | Comm Time: -65.0 hrs</text>
+  <text x="765" y="550" fill="#10b981" font-family="JetBrains Mono, monospace" font-size="10">Total 15-Yr Net Savings: $299,300 (ROI: 544.2%)</text>
+  <text x="765" y="580" fill="#f59e0b" font-family="JetBrains Mono, monospace" font-size="10">● Ready for Pepperl+Fuchs, Endress+Hauser, Phoenix Contact APL</text>
+</svg>
